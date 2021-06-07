@@ -475,6 +475,7 @@ class MusicPageWidgetState extends State<MusicPageWidget>
       audioManagerInstance.stop();
     }
     audioManagerInstance.release();
+     _searchFocusNode.dispose();
     super.dispose();
   }
 }
