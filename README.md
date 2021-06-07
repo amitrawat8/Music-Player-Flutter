@@ -1,16 +1,22 @@
-# musicplayerdemo
+# Music Player
 
-A new Flutter application of music player
+## Supported devices
+   - Android	Android 6.0 (API level 23) or higher.
+   - iOS	    14 (all)
 
-## Getting Started
+## Supported features
+  - All Android	feature
+   - iOS features
 
-This project is a starting point for a Flutter application.
+## Requirements to build the app.
+   - Linux (x64)
+  -  Windows (x64)
+  - macOS (x64)
 
-A few resources to get you started if this is your first Flutter project:
+## Instructions to build and deploy the app
+     - Clone
+     - Install Flutter
+     - Connect your Android device to your computer with a USB cable.
+     - Enter cd [project] .
+     - Run flutter install .
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
