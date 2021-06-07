@@ -18,4 +18,5 @@
      - Install Flutter
      - Connect your Android device to your computer with a USB cable.
      - Enter cd [project] .
+     - Run flutter pub get
      - Run flutter install .
