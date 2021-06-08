@@ -2,11 +2,11 @@
 
 ## Supported devices
    - Android	Android 6.0 (API level 23) or higher.
-   - iOS	    14 (all)
+
 
 ## Supported features
   - All Android	feature
-   - iOS features
+ 
 
 ## Requirements to build the app.
    - Linux (x64)
