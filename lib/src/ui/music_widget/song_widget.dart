@@ -100,7 +100,11 @@ class SongWidget extends StatelessWidget {
                               .then((err) {
                             print(err);
                           });
-                          songList[songPosition].loadingNotify = false;
+
+                          if (songList.length != 1) {
+                            songList[songPosition].loadingNotify = false;
+                          }
+
                           song.loadingNotify = true;
                           songPosition = songIndex;
                           (context as Element).markNeedsBuild();
