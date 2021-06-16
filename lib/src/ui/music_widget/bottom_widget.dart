@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../../util/time_convert.dart';
 import '../music_page.dart';
 // Created by Amit Rawat
+
+/*bottom music player*/
 class BottomWidget extends StatelessWidget {
 
   @override

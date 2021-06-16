@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:musicplayerdemo/src/util/alert_handler.dart';
 
 import '../../dto/results.dart';
 import '../../util/time_convert.dart';
@@ -9,7 +10,8 @@ import '../music_page.dart';
 import 'icon_widget.dart';
 
 // Created by Amit Rawat
-@immutable
+
+/*song list */
 class SongWidget extends StatelessWidget {
   final List<Results> songList;
 
@@ -102,6 +104,7 @@ class SongWidget extends StatelessWidget {
                           song.loadingNotify = true;
                           songPosition = songIndex;
                           (context as Element).markNeedsBuild();
+                          AlertHandler.showLoaderDialog(context);
                           // Play or pause; that is, pause if currently playing, otherwise play
                         },
                         child: song.loadingNotify != null && song.loadingNotify

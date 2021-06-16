@@ -138,11 +138,13 @@ class MusicPageWidgetState extends State<MusicPageWidget>
     audioManagerInstance.onEvents((events, args) {
       switch (events) {
         case AudioManagerEvents.start:
+          print("start to play");
           setState(() {});
 
           break;
         case AudioManagerEvents.ready:
           print("ready to play");
+          Navigator.pop(context);
           setState(() {});
           // if you need to seek times, must after AudioManagerEvents.ready event invoked
           // AudioManager.instance.seekTo(Duration(seconds: 10));

@@ -13,8 +13,7 @@ class AlertHandler {
       StyleFonts.fontstyle(12.0, FontWeight.w600, BaseColorValue.BLUE_COLOR);
 
   /*server side error msg */
-  static  showAlert(
-      BuildContext context, String msg, String tag) {
+  static showAlert(BuildContext context, String msg, String tag) {
     Icon imageurl;
     switch (tag) {
       case BaseConstant.KEY_INTERNET:
@@ -63,5 +62,24 @@ class AlertHandler {
             ],
           );
         });
+  }
+
+  static showLoaderDialog(BuildContext context) {
+    AlertDialog alert = AlertDialog(
+      content: new Row(
+        children: [
+          CircularProgressIndicator(),
+          Container(
+              margin: EdgeInsets.only(left: 10), child: Text("Buffering...")),
+        ],
+      ),
+    );
+    showDialog(
+      barrierDismissible: false,
+      context: context,
+      builder: (BuildContext context) {
+        return alert;
+      },
+    );
   }
 }
